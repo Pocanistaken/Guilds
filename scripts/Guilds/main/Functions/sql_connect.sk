@@ -1,0 +1,7 @@
+function ConnectDatabase():
+    set {_hostname} to yaml value "Mysql.Host" from "config" # hostname
+    set {_port} to yaml value "Mysql.Port" from "config" # port 3306
+    set {_user} to yaml value "Mysql.Username" from "config" # username
+    set {_password} to yaml value "Mysql.Password" from "config" # password
+    set {_ssl} to yaml value "Mysql.Use-SSL" from "config" # false
+    set {-database} to the database "mysql://%{_hostname}%:%{_port}%/mydatabase?user=%{_user}%&password=%{_password}%&useSSL=%{_ssl}%"

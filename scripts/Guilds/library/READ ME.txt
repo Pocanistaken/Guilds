@@ -1,0 +1,18 @@
+Install:
+
+¦ Put 'Skript.jar' 'Skript-reflect' (folder) and 'Skript-reflect.jar' to "plugins/"
+¦ Reload server.
+¦ Put SkGalaxy folder to file ' into "plugins/Skript/scripts"
+¦ Now execute command '/sk reload SkGalaxy/'
+¦ Installation complete.
+
+Wiew documentation in https://pocan.gitbook.io/skgalaxy/
+
+Dependencies:
+
+• Skript -> https://github.com/SkriptLang/Skript/releases
+• Skript-reflect -> https://www.spigotmc.org/resources/skript-reflect.82259/
+
+Join my discord server discord.gg/D4bqSty if you need to contact me fast 
+
+If there is any issue about SkGalaxy https://github.com/Pocanistaken/SkGalaxy/issues/new

@@ -1,0 +1,6 @@
+import:
+	org.bukkit.Statistic
+	
+expression %string% statistic [value] of %player%:
+	get:
+		return expression-2.getStatistic(Statistic.valueOf(expression-1.toUpperCase()))

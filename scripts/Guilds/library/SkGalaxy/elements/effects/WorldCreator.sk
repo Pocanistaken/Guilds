@@ -1,0 +1,18 @@
+import:
+	org.bukkit.WorldCreator
+	org.bukkit.World
+	
+effect create world (named|name|with name) %string% [with seed %-string%]: 
+	trigger:
+		if expression-2 is set:
+			set {_integer} to expression-2 parsed as integer
+			set {_world} to new WorldCreator(expression-1).seed({_integer})
+			{_world}.createWorld()
+		else:
+			set {_world} to new WorldCreator(expression-1)
+			{_world}.createWorld()
+
+effect create explosion [with] power %string% [at] %location% in %world%:
+	trigger:
+		set {_pow} to expression-2 parsed as integer
+		expression-3.createExplosion​(expression-2, {_pow})
