@@ -1,0 +1,5 @@
+
+command guild [<text>] [<text>]:
+	aliases: guilds
+	trigger:
+		if arg-1 is set:
